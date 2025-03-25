@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <string.h>
+
+// Estrutura para armazenar os dados de uma carta
+typedef struct {
+    char estado[50];
+    char codigo[50];
+    char nomeCidade[50];
+    int populacao;
+    float area;
+    float pib;
+    int pontosTuristicos;
+    float densidadePopulacional;
+    float pibPerCapita;
