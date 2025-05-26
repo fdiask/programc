@@ -2,8 +2,10 @@
 /// Ciência da Computação - Intro a Prog. Ling. C
 
 #include <stdio.h>
+#include <locale.h>
 void main() {
-    
+
+    setlocale(LC_ALL, "Portuguese")
     /// Início: Declaração de variáveis para a Carta 1 e 2 juntas:
     char estado1, estado2;
     char codigo1[4], codigo2[4];
@@ -16,31 +18,24 @@ void main() {
     /// Inserção de dados p/ CARTA 1
     printf("Cadastro da Carta 1:\n");
     printf("Estado (A-H): ");
-    fflush(stdin);
     scanf(" %c", &estado1);
 
     printf("Código da Carta (ex: A01): ");
-    fflush(stdin);
     scanf("%s", codigo1);
 
     printf("Nome da Cidade: ");
-    fflush(stdin);
     scanf(" %s", nomeCidade1); 
 
     printf("População: ");
-    fflush(stdin);
     scanf("%i", &populacao1);
 
     printf("Área (em km²): ");
-    fflush(stdin);
     scanf("%f", &area1);
 
     printf("PIB (em bilhões de reais): ");
-    fflush(stdin);
     scanf("%f", &pib1);
 
     printf("Número de Pontos Turísticos: ");
-    fflush(stdin);
     scanf("%i", &pontosTuristicos1);
 
     printf("\n");
@@ -48,31 +43,24 @@ void main() {
     /// Inserção de dados p/ CARTA 2
     printf("Cadastro da Carta 2:\n");
     printf("Estado (A-H): ");
-    fflush(stdin);
     scanf(" %c", &estado2);
 
     printf("Código da Carta (ex: B03): ");
-    fflush(stdin);
     scanf("%s", codigo2);
 
     printf("Nome da Cidade: ");
-    fflush(stdin);
     scanf(" %s", nomeCidade2); // Leitura simplificada da string
 
     printf("População: ");
-    fflush(stdin);
     scanf("%i", &populacao2);
 
     printf("Área (em km²): ");
-    fflush(stdin);
     scanf("%f", &area2);
 
     printf("PIB (em bilhões de reais): ");
-    fflush(stdin);
     scanf("%f", &pib2);
 
     printf("Número de Pontos Turísticos: ");
-    fflush(stdin);
     scanf("%i", &pontosTuristicos2);
 
     printf("\n");
